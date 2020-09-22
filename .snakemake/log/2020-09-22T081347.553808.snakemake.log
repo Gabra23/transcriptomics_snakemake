@@ -1,0 +1,20 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 2
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	bwa_map
+	1
+
+[Tue Sep 22 08:13:47 2020]
+rule bwa_map:
+    input: data/genome.fa, data/samples/A.fastq
+    output: mapped_reads/A.bam
+    jobid: 0
+    wildcards: sample=A
+
+[Tue Sep 22 08:13:49 2020]
+Finished job 0.
+1 of 1 steps (100%) done
+Complete log: /vagrant/snakemake-tutorial/snakemake-tutorial/.snakemake/log/2020-09-22T081347.553808.snakemake.log
